@@ -1,0 +1,65 @@
+
+
+body{
+    background-color: rgb(224 242 241);
+    color: black;
+    font-size: 16px;
+}
+
+h1, h2{
+    margin: 0;
+}
+
+a{
+    color: black;
+}
+
+section{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px green solid; */
+}
+
+#portfolio-summery{
+    display: flex;
+    font-size: 24px;
+}
+ p{
+    font-size: 0.6em;
+ }
+
+#name{
+    font-family: 'Calligraffitti', cursive;
+    font-size: 3.2rem;
+}
+
+#jd{
+    font-family: 'Secular One', sans-serif;
+    font-size: 2.5rem;
+}
+
+#portfolio-summery > div{
+    /* border: 1px solid red; */
+}
+
+#portfolio-summery > div:last-child{
+    flex-grow: 1;
+    align-self: flex-end;
+    padding-left: 2em;
+    text-align: center;
+}
+
+.anchor-button{
+    display: block;
+    background-color: #AEBFBE;
+    border-radius: 5px;
+    padding: 0.625em;
+    text-decoration: none;
+    margin: 0.315em;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
