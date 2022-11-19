@@ -1,12 +1,15 @@
-
+*{
+    box-sizing: border-box;
+}
 
 body{
     background-color: rgb(224 242 241);
     color: black;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
-h1, h2{
+h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
 
@@ -14,24 +17,56 @@ a{
     color: black;
 }
 
-section{
+section, nav{
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     /* border: 1px green solid; */
 }
 
+.section-title{
+    margin: 0.625em 0 0.625em 0.625em;
+}
+
+nav, nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    background-color: #39796B;
+    padding: 0.625em;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    margin: 0 0 0 auto;
+    list-style: none;
+    justify-content: center;
+}
+
+nav li{
+    padding: 0;
+    margin: 0;
+}
+
+.brand{
+    padding-left: 0.5em;
+}
+
 #portfolio-summery{
     display: flex;
-    font-size: 24px;
 }
+
  p{
     font-size: 0.6em;
  }
 
-#name{
-    font-family: 'Calligraffitti', cursive;
-    font-size: 3.2rem;
+#name, .brand{
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 3.6rem;
 }
 
 #jd{
@@ -46,20 +81,115 @@ section{
 #portfolio-summery > div:last-child{
     flex-grow: 1;
     align-self: flex-end;
-    padding-left: 2em;
+    padding: 0 0 2em 2em;
     text-align: center;
+}
+
+#portfolio-image{
+    width: 100%;
+    border-radius: 0 0 0 50%;
 }
 
 .anchor-button{
     display: block;
     background-color: #AEBFBE;
     border-radius: 5px;
-    padding: 0.625em;
+    padding: 0.315em 0.625em;
     text-decoration: none;
     margin: 0.315em;
+    color: #00251A;
+    font-weight: bold;
 }
 
 .button-container{
     display: flex;
     justify-content: center;
+}
+
+.social-icon-container{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon-container a{
+    display: flex;
+    margin: 0.625em;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-size: 0.25em;
+    padding: 0 0.625em;
+}
+
+.social-icon-container img{
+    margin-right: 1em;
+}
+
+#projects-grid{
+    display: grid;
+    grid-template-columns: 30% calc(35% - 0.625em) calc(35% - 0.625em);
+    gap: 0.625em;
+}
+
+#projects-grid > div{
+    background-size: cover;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 0 0 4px #00251A;
+    font-size: 1.8rem;
+}
+
+#projects-grid h3{
+    font-size: 1.2rem;
+}
+
+#projects-grid a{
+    color: white;
+    text-decoration: none;
+    background-color: none !important;
+}
+
+#projects-grid > div p{
+    display: none;
+}
+
+#projects-grid > div > div{
+    padding: 1.25em;
+    height: 200px;
+}
+
+#projects-grid > div:hover > div{
+    background-color: rgba(255 255 255 / .7);
+    color: black;
+    text-shadow: none;
+}
+
+#projects-grid > div:hover p{
+    display: block;
+}
+
+#projects-grid > div:hover a{
+    color: black;
+    text-shadow: none;
+}
+
+#project-picpazz{
+    background: url(../images/projects/picpazz.png) center bottom;
+    grid-column: 1 / span 2;
+}
+
+#project-e-jukebox{
+    background: url(../images/projects/e-juke-box.png);
+}
+
+#project-weddings{
+    background: url(../images/projects/public-notice-weddings.png);
+}
+
+#project-lostnfound{
+    background: url(../images/projects/public-notice-lostfound.png);
+}
+
+#project-eulogy{
+    background: url(../images/projects/public-notice-eulogy.png);
 }
