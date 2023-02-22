@@ -19,10 +19,10 @@ on:
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
   GAR_LOCATION: us-central1 # TODO: update region of the Artifact Registry
-  GKE_CLUSTER: portfolio    # TODO: update to cluster name
+  GKE_CLUSTER: autopilot-cluster-1    # TODO: update to cluster name
   GKE_ZONE: us-central1-c   # TODO: update to cluster zone
   DEPLOYMENT_NAME: gke-portfolio # TODO: update to deployment name
-  REPOSITORY: picpazz # TODO: update to Artifact Registry docker repository
+  REPOSITORY: person-portfolio # TODO: update to Artifact Registry docker repository
   IMAGE: portfolio-page
 
 jobs:
