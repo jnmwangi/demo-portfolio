@@ -23,7 +23,7 @@ env:
   GKE_ZONE: us-central1-c   # TODO: update to cluster zone
   DEPLOYMENT_NAME: gke-portfolio # TODO: update to deployment name
   REPOSITORY: person-portfolio # TODO: update to Artifact Registry docker repository
-  IMAGE: portfolio-page:latest
+  IMAGE: portfolio-page:v1
 
 jobs:
   setup-build-publish-deploy:
